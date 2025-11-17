@@ -1,7 +1,6 @@
 {
   "name": "progressiveWebApplication",
   "short_name": "pwa",
-  "start_url": ".",
   "display": "standalone",
   "background_color": "#fff",
   "description": "A simply readable Hacker News app.",
