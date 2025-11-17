@@ -11,14 +11,5 @@
       "sizes": "128x128",
       "type": "image/png"
     }
-  ],
-  "related_applications": [
-    {
-      "platform": "web"
-    },
-    {
-      "platform": "play",
-      "url": "https://play.google.com/store/apps/details?id=cheeaun.hackerweb"
-    }
   ]
 }
