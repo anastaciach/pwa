@@ -1,136 +1,87 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru">https://github.com/anastaciach/pwa/blob/main/index.html
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PWA Приложение</title>
-    <meta name="description" content="Простое PWA приложение">
-    
-    <!-- PWA метатеги -->
-    <meta name="theme-color" content="#4CAF50">
-    <link rel="manifest" href="manifest.webmanifest">
-    
+    <title>Простая веб-страница</title>
     <style>
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
-        
+
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
             min-height: 100vh;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
+        }
+
+        header {
+            background-color: #333;
             color: white;
+            padding: 20px;
             text-align: center;
-            padding: 20px;
         }
-        
-        .container {
-            max-width: 600px;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            border-radius: 20px;
-            padding: 40px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+
+        main {
+            flex: 1;
+            padding: 30px;
+            background-color: #f4f4f4;
         }
-        
-        h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-        }
-        
-        p {
-            font-size: 1.2em;
-            line-height: 1.6;
-            margin-bottom: 30px;
-            opacity: 0.9;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 20px;
-            margin: 30px 0;
-        }
-        
-        .feature {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-        
-        .feature:hover {
-            transform: translateY(-5px);
-        }
-        
-        .btn {
-            background: #4CAF50;
+
+        footer {
+            background-color: #333;
             color: white;
-            border: none;
-            padding: 15px 30px;
-            font-size: 1.1em;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            text-decoration: none;
-            display: inline-block;
-            margin: 10px;
-        }
-        
-        .btn:hover {
-            background: #45a049;
-            transform: scale(1.05);
-        }
-        
-        .status {
-            margin-top: 20px;
             padding: 15px;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            font-family: monospace;
+            text-align: center;
+        }
+
+        .large-text {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .medium-text {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .small-text {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #777;
+        }
+
+        .tiny-text {
+            font-size: 12px;
+            color: #999;
         }
     </style>
+    <link rel="manifest" href="/manifest.webmanifest" />
 </head>
 <body>
-    <div class="container">
-        <h1> PWA Приложение</h1>
-        <p>Добро пожаловать в простое Progressive Web App! Это приложение может работать офлайн и устанавливаться на устройство.</p>
+    <header>
+        <h1>Мой простой сайт</h1>
+    </header>
+
+    <main>
+        <p class="large-text">Это очень большой текст в заголовке</p>
+        <p class="medium-text">Это текст среднего размера для основного содержания</p>
+        <p class="small-text">Это маленький текст для дополнительной информации</p>
+        <p class="tiny-text">Это очень мелкий текст для примечаний</p>
         
-        <div class="features">
-            <div class="feature">
-                <h3>📱 Адаптивно</h3>
-                <p>Работает на всех устройствах</p>
-            </div>
-            <div class="feature">
-                <h3>⚡ Быстро</h3>
-                <p>Мгновенная загрузка</p>
-            </div>
-            <div class="feature">
-                <h3>🔧 Офлайн</h3>
-                <p>Работает без интернета</p>
-            </div>
-        </div>
-        
-        <button class="btn" onclick="showNotification()">Тест уведомления</button>
-        <a href="https://github.com/anastaciach/pwa" class="btn">GitHub Репозиторий</a>
-        
-      
-    </div>
-<script>
-  if ('serviceWorker' in navigator) {
-    window.addEventListener('load', () => {
-      navigator.serviceWorker.register('/sw.js')
-        .then(registration => console.log('SW registered'))
-        .catch(err => console.log('SW registration failed', err));
-    });
-  }
-</script>
+        <p class="medium-text">Еще один параграф среднего размера</p>
+        <p class="small-text">И еще один маленький текст</p>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Мой простой сайт. Все права защищены.</p>
+    </footer>
 </body>
 </html>
