@@ -7,8 +7,8 @@
   "description": "A simply readable Hacker News app.",
   "icons": [
     {
-      "src": "homescreen96.jpg",
-      "sizes": "48x48",
+      "src": "/pwa/image.jpg",
+      "sizes": "198x198",
       "type": "image/png"
     },
     {
