@@ -1,14 +1,28 @@
-{
-  "name": "progressiveWebApplication",
-  "short_name": "pwa",
-  "display": "standalone",
-  "background_color": "#fff",
-  "description": "A simply readable Hacker News app.",
-  "icons": [
-    {
-      "src": "/image.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    }
-  ]
-}
+{name: "ЕРГАКИ природный парк", short_name: "ЕРГАКИ природный парк", start_url: "index.php",…}
+background_color
+: 
+"#fdfdfd"
+display
+: 
+"standalone"
+display_override
+: 
+["fullscreen"]
+icons
+: 
+[{src: "/local/templates/ergaki/_assets/static/media/pwa/ergaki-icon-48.png", type: "image/png",…},…]
+name
+: 
+"ЕРГАКИ природный парк"
+orientation
+: 
+"portrait"
+short_name
+: 
+"ЕРГАКИ природный парк"
+start_url
+: 
+"index.php"
+theme_color
+: 
+"#485700"
